@@ -21,7 +21,7 @@ git merge template/master
 
 > Every task is indicated with a TODO
 
-1. [ ] Rename app in [README.md](./README.md), [index.html](./index.html) and [package.json](./package.json)
+1. [ ] Rename app in [README.md](./README.md), [index.html](./index.html), [App.vue](./src/App.vue) and [package.json](./package.json)
 2. [ ] Change app hue and saturation in [style.css](./style.css)
 3. [ ] Remove this part and all TODO
 
@@ -29,4 +29,4 @@ git merge template/master
 ## Tips
 
 * [Material design colors](https://materialui.co/colors/) are available, you can use `class="red-500"` on your HTML
-* [Lucide icons](https://lucide.dev/icons) are available, you can use `<i icon=house></i>` on your HTML
+* [Lucide icons](https://lucide.dev/icons) are available, you can use `<LucideIcon name=house/>` on your Vue template
