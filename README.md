@@ -1,5 +1,6 @@
 # Vue-boilerplate
-*Minimal static Vue project*
+
+_Minimal static Vue project_
 
 <!-- TODO: 1. rename app (and tool URL) -->
 
@@ -40,6 +41,21 @@ To update from templates latest changes:
 make update-template
 ```
 
+### Upgrade from version 1
+
+```shell
+git remote add template git@github.com:klemek/vue-boilerplate.git
+git fetch --all
+git checkout -b v1 origin/master
+git branch -D master
+git checkout -b master template/master
+bun install
+# re-code logic by checking online code
+git commit -a -m 'v2'
+git push origin master v1 --force
+git remote --remove template
+```
+
 ### Makefile targets
 
 ```txt
@@ -59,5 +75,5 @@ BUN = bun
 
 ### Tips
 
-* [Material design colors](https://materialui.co/colors/) are available, you can use `class="red-500"` on your HTML
-* [Lucide icons](https://lucide.dev/icons) are available, you can use `<LucideIcon name=house/>` on your Vue template
+- [Material design colors](https://materialui.co/colors/) are available, you can use `class="red-500"` on your HTML
+- [Lucide icons](https://lucide.dev/icons) are available, you can use `<LucideIcon name=house/>` on your Vue template
