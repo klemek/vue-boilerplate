@@ -45,15 +45,10 @@ make update-template
 
 ```shell
 git remote add template git@github.com:klemek/vue-boilerplate.git
-git fetch --all
-git checkout -b v1 origin/master
-git branch -D master
-git checkout -b master template/master
-bun install
+git rm --force '*'
+git checkout template/master -- '*'
+git remote remove template
 # re-code logic by checking online code
-git commit -a -m 'v2'
-git push origin master v1 --force
-git remote --remove template
 ```
 
 ### Makefile targets
