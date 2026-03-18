@@ -45,6 +45,7 @@ make update-template
 
 ```shell
 git remote add template git@github.com:klemek/vue-boilerplate.git
+git fetch template
 git rm --force '*'
 git checkout template/master -- '*'
 git remote remove template
